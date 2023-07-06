@@ -18,6 +18,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid whitesmoke;
+    padding-bottom: 0px;
 }
 
 .logo {
@@ -29,18 +30,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 5px;
     font-weight: 700;
     
 }
 
 .nav_links a:hover {
-    color: rgb(0, 255, 170);
+    display: flex;
+    width: auto;
+    height: 110px;
+    color: rgb(0, 0, 14);
+    background-color: antiquewhite;
+    transform: skew(.312rad);
+    align-items: center;
+    border-radius:  0.5rem;
 }
 
 .nav_links li {
-    margin-right: 50px;
+    margin: 20px;
 }
 
 h1 {
