@@ -22,9 +22,12 @@ header {
 }
 
 .logo {
-    width: 400px;
-    height: 35px;
+    margin-bottom: 0px;
     margin-left: 100px;
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    align-items: center;
+
 }
 
 .nav_links {
@@ -44,7 +47,7 @@ header {
 .nav_links a:hover {
     display: flex;
     width: auto;
-    height: 80px;
+    height: 70px;
     color: rgb(0, 0, 14);
     background-color: antiquewhite;
     transform: skew(.312rad);
@@ -55,9 +58,4 @@ header {
 
 .nav_links li {
     margin: 20px;
-}
-
-h1 {
-    font-family: 'Poiret One', cursive;
-
 }
