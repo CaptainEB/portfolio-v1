@@ -17,11 +17,13 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid antiquewhite;
     padding-bottom: 0px;
 }
 
 .logo {
+    width: 400px;
+    height: 35px;
     margin-left: 100px;
 }
 
@@ -33,18 +35,22 @@ header {
     margin-left: 50px;
     margin-bottom: 5px;
     font-weight: 700;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
     
 }
 
 .nav_links a:hover {
     display: flex;
     width: auto;
-    height: 110px;
+    height: 80px;
     color: rgb(0, 0, 14);
     background-color: antiquewhite;
     transform: skew(.312rad);
     align-items: center;
-    border-radius:  0.5rem;
+    border-radius:  0.2rem;
+    transition: 0.5s;
 }
 
 .nav_links li {
