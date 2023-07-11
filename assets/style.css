@@ -1,9 +1,14 @@
+:root {
+    --primary-color: antiquewhite;
+    --secondary-color: rgb(0,0,14);
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: rgb(0, 0, 14);
+    background-color: var(--secondary-color);
     color: whitesmoke;
     font-size: 30px;
 }
@@ -46,8 +51,8 @@ header {
 .nav_links a:hover {
     display: flex;
     height: 70px;
-    color: rgb(0, 0, 14);
-    background-color: antiquewhite;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     transform: skew(.312rad);
     align-items: center;
     border-radius:  0.2rem;
@@ -56,4 +61,32 @@ header {
 
 .nav_links li {
     margin: 20px;
+}
+
+#active {
+    display: flex;
+    height: 70px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transform: skew(.312rad);
+    align-items: center;
+    border-radius:  0.2rem;
+    transition: 0.5s;
+}
+
+.about-section {
+    display: flex;
+    margin: 200px 100px 150px 100px;
+}
+
+.about-section p {
+    margin: 0px 30px 0px 100px;
+    padding: 20px 50px 20px 50px;
+    border-left: 2px ridge var(--primary-color);
+}
+
+.about-section img {
+    height: 700px;
+    border-radius: 5rem;
+
 }
