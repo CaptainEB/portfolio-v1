@@ -64,7 +64,40 @@ header {
 .nav_links li {
     margin: 20px;
 }
-/* Only styles relevant to the about page go here */
+
+
+
+
+
+/* Only styles related to contact me page go here */
+.contact-me_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.contact-me_main p {
+    margin: 0px;
+
+}
+
+.contact-me_main>* {
+    padding: 20px;
+}
+
+.contact-me_main>*:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Only styles related to the about page go here */
 .about-section {
     display: flex;
     margin: 200px 100px 150px 100px;
