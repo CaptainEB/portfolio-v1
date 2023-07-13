@@ -1,3 +1,5 @@
+
+/* Global settings like the navbar go here */
 :root {
     --primary-color: antiquewhite;
     --secondary-color: rgb(0,0,14);
@@ -62,7 +64,7 @@ header {
 .nav_links li {
     margin: 20px;
 }
-
+/* Only styles relevant to the about page go here */
 .about-section {
     display: flex;
     margin: 200px 100px 150px 100px;
@@ -81,6 +83,12 @@ header {
 
 }
 
+.skills {
+    margin: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 2rem;
+}
+
 .skills p {
     margin-left: 50px;
 }
@@ -89,4 +97,52 @@ header {
     display: flex;
     justify-content: space-around;
     list-style: none;
+}
+
+/* Responsive layout rules go here */
+@media only screen and (max-width: 1024px){
+    /* This is for the about section */
+    .about-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-section p {
+        border-left: none;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    /* This is for the about section */
+    .about-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-section p {
+        border-left: none;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    /* This is for the about section */    
+        .about-section img {
+            height: 400px;
+        }
+    
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .about-section p {
+            border-left: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .skills ul {
+            flex-wrap: wrap;
+        }
 }
