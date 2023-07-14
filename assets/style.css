@@ -65,10 +65,10 @@ header {
     margin: 20px;
 }
 
-
 /* Projects styles go here */
+
 .project1 {
-    padding: 50px;
+    margin: 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -79,27 +79,35 @@ header {
 }
 
 .project1 img{
-    height: 500px;
+    width: 90%;
     border-radius: 2rem;
     border: 5px solid var(--primary-color);
 }
 
-.project1 img:hover {
+.notP1 {
+    display: flex;
+    margin: 10px;
+
+}
+
+.notP1 {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.notP1 img {
+    height: 500px;
+}
+
+
+.projects-main img:hover {
     filter: blur(3px);
 }
 
 
 
-
-/* Only styles related to contact me page go here */
-.contact-me {
-    border-radius: 2rem;
-    border-top: 2px solid var(--primary-color);
-}
-
-.contact-me a {
-    padding: 20px;
-}
 
 
 /* Only styles related to the about page go here */
@@ -130,11 +138,40 @@ header {
 
 .skills p {
     margin-left: 50px;
+    line-height: 150%;
 }
 
-.skills-p {
-    line-height: 10px;
+
+
+
+/* Only styles related to contact me page go here */
+.contact-me {
+    margin: 20px;
+    margin-top: 20px;
+    border: 2px;
+    border-radius: 2rem;
+    border-top: 2px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
+
+.contact-me>* {
+    margin: 10px 10px 10px 50px;
+    padding: 20px;
+    width: auto;
+}
+
+.contact-me>*:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 2rem;
+}
+
+
+
+
 
 /* Responsive layout rules go here */
 @media only screen and (max-width: 1024px){
