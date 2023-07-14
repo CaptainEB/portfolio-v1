@@ -170,7 +170,17 @@ header {
 }
 
 
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid var(--primary-color);
+}
 
+footer>p {
+    color: rgba(250, 235, 215, 0.597);
+    padding: 0px;
+    margin: 10px;
+}
 
 
 /* Responsive layout rules go here */
