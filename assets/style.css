@@ -66,6 +66,28 @@ header {
 }
 
 
+/* Projects styles go here */
+.project1 {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project1 p {
+    padding: 10px;
+}
+
+.project1 img{
+    height: 500px;
+    border-radius: 2rem;
+    border: 5px solid var(--primary-color);
+}
+
+.project1 img:hover {
+    filter: blur(3px);
+}
+
 
 
 
