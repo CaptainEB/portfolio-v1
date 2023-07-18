@@ -15,6 +15,7 @@ body {
 }
 
 a {
+    list-style: none;
 	text-decoration: none;
 	color: inherit;
 }
@@ -23,7 +24,6 @@ header {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	border-bottom: 1px solid antiquewhite;
 	padding-bottom: 0px;
 }
 
@@ -53,7 +53,6 @@ header {
 	height: 70px;
 	color: var(--secondary-color);
 	background-color: var(--primary-color);
-	transform: skew(0.312rad);
 	align-items: center;
 	border-radius: 0.2rem;
 	transition: 0.5s;
@@ -119,8 +118,6 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .hero img {
@@ -130,6 +127,26 @@ header {
     object-fit:cover;
     object-position:top 0rem right 0rem;
 
+}
+
+.hero-text {
+    left: 20%;
+    bottom: 40%;
+    position: absolute;
+    display: flex;
+    gap: 50px;
+}
+
+.hero-text > * {
+    color: var(--secondary-color);
+    border-radius: 3rem;
+    padding: 20px;
+    border: 1px solid rgb(0, 37, 89);
+    background-color: rgba(0, 191, 255, 0.700);
+}
+
+.hero-text > *:hover {
+    background-color: rgba(0, 191, 255, 1);
 }
 
 .skills {
