@@ -11,25 +11,24 @@
 body {
 	background-color: var(--secondary-color);
 	color: whitesmoke;
-	font-size: 30px;
+	font-size: 2.5rem;
 }
 
 a {
-    list-style: none;
+	list-style: none;
 	text-decoration: none;
 	color: inherit;
 }
 
 header {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-evenly;
 	align-items: center;
 	padding-bottom: 0px;
 }
 
 .logo {
 	margin-bottom: 20px;
-	margin-left: 100px;
 	font-family: "Poiret One", cursive;
 	display: flex;
 	align-items: center;
@@ -40,7 +39,6 @@ header {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	margin-left: 50px;
 	margin-bottom: 5px;
 	font-weight: 700;
 	border-bottom: 0px;
@@ -59,6 +57,16 @@ header {
 }
 
 .nav_links li {
+	margin: 20px;
+}
+
+.contact-me {
+	height: 7.5rem;
+	display: flex;
+	align-items: flex-end;
+}
+
+.contact-me > * {
 	margin: 20px;
 }
 
@@ -115,38 +123,51 @@ header {
 }
 
 .hero {
-    margin: 0;
-    padding: 0;
-    display: flex;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.hero p {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	font-size: 5rem;
+	color: var(--primary-color);
+}
+
+#sam {
+	color: rgb(255, 0, 128);
 }
 
 .hero img {
-    width: 100svw;
-    min-height: 400px;
-    max-height: 1000px;
-    object-fit:cover;
-    object-position:top 0rem right 0rem;
-
+	width: 100svw;
+	min-height: 300px;
+	max-height: 1000px;
+	object-fit: cover;
+	object-position: top 0rem right 0rem;
 }
 
 .hero-text {
-    left: 20%;
-    bottom: 40%;
-    position: absolute;
-    display: flex;
-    gap: 50px;
+	left: 20%;
+	bottom: 31%;
+	position: absolute;
+	display: flex;
+	gap: 50px;
 }
 
 .hero-text > * {
-    color: var(--secondary-color);
-    border-radius: 3rem;
-    padding: 20px;
-    border: 1px solid rgb(0, 37, 89);
-    background-color: rgba(0, 191, 255, 0.700);
+	color: var(--secondary-color);
+	border-radius: 3rem;
+	padding: 20px;
+	border: 1px solid rgb(0, 37, 89);
+	background-color: rgba(0, 191, 255, 0.7);
 }
 
 .hero-text > *:hover {
-    background-color: rgba(0, 191, 255, 1);
+	background-color: rgba(0, 191, 255, 1);
 }
 
 .skills {
@@ -161,35 +182,10 @@ header {
 	line-height: 150%;
 }
 
-/* Only styles related to contact me page go here */
-.contact-me {
-	margin: 20px;
-	margin-top: 20px;
-	border: 2px;
-	border-radius: 2rem;
-	border-top: 2px solid var(--primary-color);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
-}
-
-.contact-me > * {
-	margin: 10px 10px 10px 50px;
-	padding: 20px;
-	width: auto;
-}
-
-.contact-me > *:hover {
-	background-color: var(--primary-color);
-	color: var(--secondary-color);
-	border-radius: 2rem;
-}
-
 footer {
 	display: flex;
 	justify-content: center;
-	border-top: 2px solid var(--primary-color);
+	border-top: 1px solid rgba(250, 235, 215, 0.5);
 }
 
 footer > p {
